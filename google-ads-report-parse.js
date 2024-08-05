@@ -5,7 +5,7 @@
   Setup: 1) In Google Ads, schedule a daily download of a campaign report as a google sheet. If you want to change the name of the scheduled 
             download from the default 'Campaign report', be sure to change var sourceFileName = '[your report name]'
          2) Change var targetSpreadsheetID = '[marketing spreadsheet ID]'. Find the spreadsheet id by opening the spreadsheet and checking the url.
-            It will look something like this https://docs.google.com/spreadsheets/d/15nZj5I3-8The1pQ7NTmxVJnHCtn2cd7FuuZe9sasof0/.
+            It will look something like this https://docs.google.com/spreadsheets/d/15nZl5I3-8The1pQ7QTmxVJnHCtn2cd7FuuZe9sasof0/.
             https://docs.google.com/spreadsheets/d/<SPREADSHEET ID>/
          3) Create a new helper sheet named 'Google Ads'. If you wish to use a different name, be sure to change var targetSheetName = '[newName]';
          4) Run the function setUpTrigger() to set up the daily trigger to transfer and delete the downloaded report data.
@@ -13,7 +13,7 @@
  ===============================================================================================================================================*/
 
  function transferDataAndDelete() {
-    var targetSpreadsheetID = '14nZq5U3-8The1pQ5NTmxVJnTCtn2cw7FuuZe9sasof0';  // Replace with your actual spreadsheet ID
+    var targetSpreadsheetID = '[marketing spreadsheet ID]';  // Replace with your actual spreadsheet ID
     var targetSheetName = 'Google Ads';
   
     var sourceFileName = 'Campaign report';  // This is the name of the scheduled report spreadsheet file downloaded
